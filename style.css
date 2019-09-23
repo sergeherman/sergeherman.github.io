@@ -1,0 +1,49 @@
+body{
+	font-family: "Arial";
+}
+#topbox{
+   		width: 50%;
+    background-color: navy;
+    text-align: center;
+    border-radius: 20px;
+    height: 80px;
+    padding-top: 1px;
+}
+
+
+h1{
+	font: Arial;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+}
+
+body{
+    text-align: left;
+}
+
+#imgsh{
+    width: 150px;
+        float: right;
+        border: 2px ridge rgb(253, 252, 252);
+        margin-top: -50px;
+        margin-right: 20px;
+        border-radius: 20px;
+}
+
+#footer{
+    width: 50%;
+    background-color: navy;
+    text-align: center;
+    border-radius: 20px;
+    height: 80px;
+    padding-top: 1px;
+    color:white;
+}
+
+li{
+    padding-left: 30px;
+}
