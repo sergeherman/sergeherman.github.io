@@ -1,129 +1,79 @@
-body {
-	font-size: auto;
+h1 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	 padding-top: 10px;
+	 font-size: 3rem;
+	 }
+   
+   h2 {
+	 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	 font-size: 2rem;
+	 padding-bottom: 20px;
+	 }
+   
+   header, footer, main {
+	 margin: 1em auto;
+	 max-width: 760px;
+	 }
+	   
+   header, footer {
+	 color: white;
+	 background-color: navy;
+	 text-align: center;
+	 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	 border-radius: 20px;
+	 }
+	   
+   footer {
+	 padding: 10px;
+	 }
+	   
+   main {
+	 display: grid;
+	 grid-template-columns: 1fr;
+	 justify-content: space-evenly;
+	 grid-column-gap: 10px;
+	 grid-row-gap: 20px;
+	 }
+   
+   section {
+	 text-align: center;
+	 border: 2px outset #383838;
+	 }
+   
+   section h3 {
+	 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	 font-size: 1.5rem;
+   }  
+   p {
+	 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	 padding: 10px;
+	 text-align: left;
+   }
+   img {
 	 
-}
-header{
-
-    background-color: navy;
-    text-align: center;
-	border-radius: 20px;
-}
-
-/* phone or baseline views **************************/
-main {
-	max-width: 767px;
-	margin: 0 auto;
-
-}
-h1, h2 {
-	
-	color: #536878;
-}
-
-main {
-	display: grid;
-grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-grid-gap: 2vw;
-	font-size: 1.8rem;
-	font-family: 'Nanum Gothic', sans-serif;
-
-
-text-align: center;
-}
-
-main section {
-	margin: 1.5rem;
-	border: 1px solid #bbb;
-
-	padding-right: 8px; 
-	background-color: #eee;
-	
-}
-section:nth-child(2) {
-	
-	display: none;
-	margin: 1.5rem;
-	
-}
-.colimage {
-	box-shadow: 0 0 30px #333;
-}
-
-/* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
-	main {
-		grid-columns: 1fr 1fr;
-	}
-
-	section:nth-child(2) {
-		
-		display: block;
-	}
-
-	section:nth-child(3) {
-		grid-column: span 2;
-		
-	}
-
-	main picture {
-		display: block;
-	}
-	main section picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
-}
-
-/* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	
-	}
-
-	section:nth-child(3) {
-	
-		grid-column: span 1;
-	
-	}
-}
-body{
-      
-}
-
-h1{
-	
-    color: white;
-    text-align: center;
-}
-
-h2{
-    text-align: left;
-}
-
-body{
-    text-align: left;
-}
-
-/* #imgsh{
-    width: 150px;
-        float: right;
-        border: 2px ridge rgb(253, 252, 252);
-        margin-top: -50px;
-        margin-right: 20px;
-        border-radius: 20px;
-}
-*/
-
-#footer{
-    
-    background-color: navy;
-    text-align: center;
-    border-radius: 20px;
-    height: auto;
-    padding-top: 1px;
-    color:white;
-	font-size: 1.8rem;
-	font-family: 	Areal;
-}
+	 max-width: 217px;
+   }
+   main a {
+	 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	 font-size: 1.5em;
+   }
+   /* Tablet view ---------------------------------------- */
+	 @media only screen and (min-width: 37.5em) {
+	   main {
+		 grid-template-columns: 1fr 1fr;
+		 }
+	   section:nth-child(3) {
+		 grid-column: span 2;
+	   }
+   
+	 }
+	   
+   /* Desktop view --------------------------------------- */
+	 @media only screen and (min-width: 68em) {
+	   main {
+		 grid-template-columns: 1fr 1fr 1fr;
+		 }
+	   section:nth-child(3) {
+		 grid-column: span 1;
+		 }
+	   }
