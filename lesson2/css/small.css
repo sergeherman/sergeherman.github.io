@@ -39,6 +39,7 @@ main section {
 	
 }
 section:nth-child(2) {
+	padding-left: 1px;  
 	display: none;
 	margin: 1.5rem;
 	
@@ -54,11 +55,13 @@ section:nth-child(2) {
 	}
 
 	section:nth-child(2) {
+		padding-left: 1px;  
 		display: block;
 	}
 
 	section:nth-child(3) {
 		grid-column: span 2;
+		padding-left: 1px;  
 	}
 
 	main picture {
@@ -79,6 +82,7 @@ section:nth-child(2) {
 	}
 
 	section:nth-child(3) {
+		padding-left: 1px;  
 		grid-column: span 1;
 	
 	}
