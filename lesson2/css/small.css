@@ -26,7 +26,7 @@ grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 grid-gap: 2vw;
 	font-size: 1.8rem;
 	font-family: 'Nanum Gothic', sans-serif;
-	padding: 1px;
+
 
 text-align: center;
 }
@@ -34,12 +34,13 @@ text-align: center;
 main section {
 	margin: 1.5rem;
 	border: 1px solid #bbb;
-	padding: 1px;
+
+	padding-right: 8px; 
 	background-color: #eee;
 	
 }
 section:nth-child(2) {
-	padding-left: 1px;  
+	
 	display: none;
 	margin: 1.5rem;
 	
@@ -55,13 +56,13 @@ section:nth-child(2) {
 	}
 
 	section:nth-child(2) {
-		padding-left: 1px;  
+		
 		display: block;
 	}
 
 	section:nth-child(3) {
 		grid-column: span 2;
-		padding-left: 1px;  
+		
 	}
 
 	main picture {
@@ -82,7 +83,7 @@ section:nth-child(2) {
 	}
 
 	section:nth-child(3) {
-		padding-left: 1px;  
+	
 		grid-column: span 1;
 	
 	}
