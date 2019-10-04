@@ -1,0 +1,85 @@
+h1 {
+ font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding-top: 10px;
+  font-size: 3rem;
+  }
+
+h2 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  }
+
+header, footer, main, nav {
+  margin: 1em auto;
+  max-width: 760px;
+  }
+    
+header, footer {
+  color: white;
+  background-color: navy;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-radius: 20px;
+  
+  }
+  
+  .logo {
+    width: 15%;
+    margin: 0;
+}
+    
+footer {
+  padding: 10px;
+  }
+    
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-evenly;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  }
+
+section {
+  text-align: center;
+  border: 2px outset #383838;
+  }
+
+section h3 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.5rem;
+}  
+p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 10px;
+  text-align: left;
+}
+img {
+  
+  max-width: 217px;
+}
+main a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+/* Tablet view ---------------------------------------- */
+  @media only screen and (min-width: 37.5em) {
+    main {
+      grid-template-columns: 1fr 1fr;
+      }
+    section:nth-child(3) {
+      grid-column: span 2;
+    }
+
+  }
+    
+/* Desktop view --------------------------------------- */
+  @media only screen and (min-width: 68em) {
+    main {
+      grid-template-columns: 1fr 1fr 1fr;
+      }
+    section:nth-child(3) {
+      grid-column: span 1;
+      }
+    }
