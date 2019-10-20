@@ -117,4 +117,128 @@ li a.active {
     margin-left: 20px;
     font-size: .9rem;
 }
+/*****div******/
+
+.hero {
+    position: relative;
+}
+
+.overlay {
+    width: 240px;
+    height: 220px;
+    background-color: #1393d4;
+    color: #ffffff;
+    opacity: 0.80;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
+}
+
+.overlay h2 {
+    font-family: 'Playfair Display', serif;
+    color: #f7f7f7;
+    text-align: center;
+    margin: 15px;
+}
+
+.overlay li {
+    font-size: 120%;
+    font-family: 'Quicksand', serif;
+}
+
+.townPic {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#summary {
+    list-style: none;
+    text-align: left;
+    padding: 20px;
+    margin: 0px;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    padding: 0px;
+}
+
+.hero h3 {
+    padding: 10px;
+    margin: 0px;
+}
+
+.forecast {
+    display: none;
+}
+
+.article {
+    background-color: #0692cf;
+    margin-top: -40px;
+    padding: 20px;
+}
+
+.article h1,
+h3 {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair Display', serif;
+    color: #f7f7f7;
+}
+
+.article p {
+    text-align: justify;
+    color: #f7f7f7;
+    font-family: 'Quicksand', serif;
+}
+
+.article img {
+    width: 90%;
+    padding: 15px;
+}
+
+main h1 {
+    text-align: center;
+    font-family: 'Quicksand', serif;
+    color: #0692CF;
+    padding: 20px;
+}
+
+.contact h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #032d3f;
+    font-family: "Quicksand", sans serif;
+}
+
+.contact h4 {
+    text-align: center;
+    color: #0692cf;
+    font-family: "Quicksand", sans serif;
+}
+
+.contact img {
+    width: 17px;
+    margin-bottom: -3px;
+    margin-right: 5px;
+    font-family: "Quicksand", sans serif;
+}
+
+#map {
+    display: none;
+}
+
+.social img {
+    width: 10%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact .social {
+    margin: auto;
+}
 
