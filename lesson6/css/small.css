@@ -1,0 +1,167 @@
+body {
+    font-size: 16px;
+    color: black;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+header,footer {
+    color: white;
+    background-color: navy;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 20px;
+}
+
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    margin: 0 auto;
+    max-width: 767px;
+}
+
+
+nav {
+    color: white;
+    background-color: navy;
+    display: block;
+	border-radius: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+main section {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px;
+    padding: 1rem 1rem;
+    background-color: gray;
+	border-radius: 20px;
+	font-size: 20px;
+    color: white;
+}
+
+p {
+    margin: 0;
+    padding: 1rem 1rem;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: yellow;
+    background-color: blue;
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+
+header img {
+    width: 15%;
+    margin: 0;
+    height: auto;
+}
+
+li a.active {
+    color: white;
+    background-color: gray;
+    font-weight: bold;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.m {
+
+    letter-spacing: 1pt;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+/*****div******/
+
+.hero {
+    position: relative;
+}
+
+.overlay {
+    width: 240px;
+    height: 300px;
+    background-color: blue;
+    color: white;
+    opacity: 0.70;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    }
+
+.overlay h2 {
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+
+.overlay li {
+    font-size: 120%;
+
+ }
+
+.townPic {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#summary {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 16px;
+    list-style: none;
+    text-align: left;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+.hero h3 {
+    padding: 10px;
+    margin: 0px;
+}
+
