@@ -55,6 +55,7 @@ p {
     margin: 0;
     padding: 1rem 1rem;
 }
+
 .banner {
     display: flex;
     justify-content: center;
@@ -130,7 +131,16 @@ li a.active {
 /*****div******/
 
 .hero {
-    position: relative;
+    position: relative;	
+}
+
+.hero img {
+    width: 100%;
+}
+
+.townPic {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .overlay {
@@ -155,10 +165,6 @@ li a.active {
 
  }
 
-.townPic {
-    width: 100%;
-    margin-bottom: 50px;
-}
 
 #summary {
     font-family: 'Anonymous Pro', monospace;
