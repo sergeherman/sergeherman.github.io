@@ -14,6 +14,9 @@
 </head>
 
 <body>
+        <div class="banner">
+                <span id="topbanner"></span>
+            </div>
     <header>
         <picture>
            <img src="images/iconfinder_cloudy_2995001.png" alt="Logo Weather" class="logo">
@@ -40,7 +43,12 @@
 
         <section>
                 <div class="hero">
-                        <img class="townPic" src="images/michael-tuszynski-F3MqchhfTnI-unsplash-small.jpg" alt="city photo">
+                        <picture>
+                                <source srcset="images/michael-tuszynski-F3MqchhfTnI-unsplash-medium.jpg" alt="city photo" media="(min-width: 39em) and (max-width: 59em)">
+                                <source srcset="images/michael-tuszynski-F3MqchhfTnI-unsplash-large.jpg" alt="city photo" media="(min-width: 60em)">
+                                <img src="images/michael-tuszynski-F3MqchhfTnI-unsplash-small2.jpg" alt="city photo">
+                            </picture>
+                        
                              <section class="overlay">
                                 <h2>Weather Summary</h2>
                                     <ul id="summary">

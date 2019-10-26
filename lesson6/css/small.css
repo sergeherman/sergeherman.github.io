@@ -55,6 +55,16 @@ p {
     margin: 0;
     padding: 1rem 1rem;
 }
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color:yellow;
+    color: navy;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto;
+    line-height: 2rem;
+}
 
 .navigation {
     list-style: none;
