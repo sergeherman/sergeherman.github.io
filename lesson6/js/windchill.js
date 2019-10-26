@@ -2,9 +2,9 @@ var DayTemp = document.getElementById('DayTemp').value;
 var WindSpeed = document.getElementById('WindSpeed').value;
 
 if (isNaN(WindSpeed) || isNaN(DayTemp)) {
-    document.getElementById("chill").innerHTML = "N/A";
+    document.getElementById("WindChill").innerHTML = "N/A";
 } else {
-    document.getElementById("chill").innerHTML = WindChill(DayTemp, WindSpeed);
+    document.getElementById("WindChill").innerHTML = WindChill(DayTemp, WindSpeed);
 }
 
 function WindChill(DayTemp, WindSpeed) {
