@@ -146,7 +146,7 @@ li a.active {
 .overlay {
     width: 340px;
     height: 300px;
-    background-color: blue;
+    background-color: navy;
     color: white;
     opacity: 0.70;
     position: absolute;
@@ -167,7 +167,7 @@ li a.active {
 
 
 #summary {
-	background-color: blue;
+	background-color: navy;
     font-family: 'Anonymous Pro', monospace;
     font-size: 20px;
  /*   list-style: none;
