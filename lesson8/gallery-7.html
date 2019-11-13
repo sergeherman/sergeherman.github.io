@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - W06 Assignment: Preston Town Page</title>
+    <meta name="description" content="W06 Assignment: Preston Town Page for the Two Weathers website">
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+        <div class="banner">
+                <span id="topbanner"></span>
+            </div>
+    <header>
+        <picture>
+           <img src="images/iconfinder_cloudy_2995001.png" alt="Logo Weather" class="logo">
+        </picture>
+        <section class="headings">
+            <h1>Two Weathers Forecast</h1>
+            <div class="m">Choose your weather!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">☰ Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+                <div class="gallery">
+                        <picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image4.jpg" />
+<p> House </p>
+</picture>
+<picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image5.jpg" />
+<p> Sky </p>
+</picture>
+<picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image6.jpg" />
+<p> Bird </p>
+</picture>
+<picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image7.jpg" />
+<p> Green </p>
+</picture>
+<picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image8.jpg" />
+<p> Puddle </p>
+</picture class="hover">
+<picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image3.jpg" />
+<p> Snow </p>
+</picture class="hover">
+<picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image0.jpg" />
+<p> Rain </p>
+</picture class="hover">
+<picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image1.jpg" />
+<p> Fog </p>
+</picture class="hover">
+<picture class="hover">
+<img class="lazy" alt="placeholder" src="images/image4low.jpg" data-src="images/image2.jpg" />
+<p> Cloud </p>
+</picture class="hover">
+                            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="footer">
+        
+            &copy; 2019 | Siarhei Herman | Moscow, Russia | <a href=" https://www.byui.edu/online">BYUI Online Learning</a>
+        <br>
+        
+		<script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        today = mm + '/' + dd + '/' + yyyy;
+        document.write("Last Update on "+today);
+
+        </script>
+    </footer>
+
+    <script src="js/toggleMenu.js"></script>
+	<script src="js/windchill.js"></script>
+	<script src="js/topbanner.js"></script>
+	<script src="js/InterObsApi.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({  google: {  families: [ 'Anonymous Pro' ] }});
+    </script>
+
+</body>
+
+</html>
