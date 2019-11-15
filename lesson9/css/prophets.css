@@ -1,0 +1,63 @@
+body {
+    background-color: grey;
+}
+
+h1 {
+
+    text-align: center;
+    color: black;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+	box-shadow: 0.25em 0.25em .25em 0.1em black;
+}
+
+section {
+    padding: 10px;
+    background-color: grey;
+    margin: 5px;
+	box-shadow: 0.25em 0.25em .25em 0.1em black;
+}
+
+section h2 {
+    margin-bottom: 5px;
+    color: navy;
+	}
+
+section p {
+
+    font-weight: bold;
+    color: navy;
+	
+}
+
+.cards img {
+    width: 100%;
+    margin-top: 20px;
+	box-shadow: 0.25em 0.25em .25em 0.1em black;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+header hr {
+    color: white;
+    width: 100%;
+}
+@media only screen and (min-width: 40em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+		box-shadow: 0.25em 0.25em .25em 0.1em black;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+		box-shadow: 0.25em 0.25em .25em 0.1em black;
+    }
+}
