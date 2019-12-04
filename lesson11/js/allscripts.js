@@ -112,3 +112,37 @@ fiveDay = (jsObject) => {
 
 fetchAPI(apiURL, 1);
 fetchAPI(apiURL2, 2);
+
+// Events
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+    .then(function(response) {
+        return response.json();
+    })
+
+.then(function(jsonObject) {
+    console.table(jsonObject);
+
+    const towns = jsonObject['towns'];
+    for (let i = 0; i < towns.length; i++) {
+        if (towns[i].name == 'Preston') {
+            let eventscard = document.createElement('section');
+            let event1 = document.createElement('h5');
+            let event2 = document.createElement('h5');
+            let event3 = document.createElement('h5');
+
+
+            event1.textContent = towns[i].events[0];
+            eventscard.appendChild(event1);
+
+            event2.textContent = towns[i].events[1];
+            eventscard.appendChild(event2);
+
+            event3.textContent = towns[i].events[2];
+            eventscard.appendChild(event3);
+
+            document.querySelector('div.event').appendChild(eventscard);
+        }
+    }
+});

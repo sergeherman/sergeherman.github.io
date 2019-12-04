@@ -9,7 +9,7 @@ header,footer {
     background-color: navy;
 	box-sizing: border-box;
 	text-align: center;
-	border-radius: 20px;
+
 }
 
 
@@ -31,7 +31,7 @@ nav {
     color: white;
     background-color: navy;
     display: block;
-	border-radius: 20px;
+	border: 1px solid gray;
 }
 
 nav ul {
@@ -41,7 +41,11 @@ nav ul {
 }
 
 main section {
-    margin: .5rem;
+	max-width: 90%;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: .5rem;
     border: 1px;
     padding: 1rem 1rem;
     background-color: gray;
@@ -49,7 +53,24 @@ main section {
 	font-size: 20px;
     color: white;
 }
+main section img{
+max-width: 80%;
+  height: auto;
+  border-radius: 20px;
+}
+footer img{
+max-width: 3%;
+  height: auto;
+   margin-left: auto;
+  margin-right: auto;
+    margin-top: .5rem;
+ 
+}
 
+footer {
+margin-top: .5rem;
+ 
+}
 p {
     margin: 0;
     padding: 1rem 1rem;
@@ -163,14 +184,15 @@ li a.active {
 }
 
 .overlay {
-    width: 340px;
-    height: 300px;
-    background-color: navy;
+    width: 400px;
+    height: 250px;
+    background-color: grey;
     color: white;
-    opacity: 0.70;
+    opacity: 0.90;
     position: absolute;
     top: 10px;
     left: 10px;
+	line-height: 0.1rem;
     }
 
 .overlay h2 {
@@ -186,9 +208,13 @@ li a.active {
 
 
 #summary {
-	background-color: navy;
+	background-color: gray;
     font-family: 'Anonymous Pro', monospace;
     font-size: 20px;
+	line-height: 0.1rem;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
  /*   list-style: none;
     text-align: left;
     padding: 20px;
@@ -217,4 +243,13 @@ table td {
         border: 1px solid white;
     }
 
-
+.events {
+    display: flex;
+ 
+	justify-content: right;
+    text-align: right;
+    background-color:navy;
+    color: white;
+    margin: 0;
+    line-height: 0.1rem;
+}

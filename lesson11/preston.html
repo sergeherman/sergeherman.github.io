@@ -14,6 +14,12 @@
 </head>
 
 <body>
+        <div class="events">
+		<h3>Preston Events:</h3>
+			<div class="event">
+             </div>
+			</div>
+			
         <div class="banner">
                 <span id="topbanner"></span>
             </div>
@@ -26,14 +32,17 @@
             <div class="m">Choose your weather!</div>
         </section>
     </header>
+            <div class="event">
+                <section> </section>
+            </div>
 
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">☰ Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html" class="active">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
     </nav>
@@ -42,14 +51,16 @@
 
         <section>
 		<h2><span id="city-name"></span></h2>
+
                 <div class="hero">
                         <picture>
-                                <source srcset="images/michael-tuszynski-F3MqchhfTnI-unsplash-medium.jpg" media="(min-width: 39em) and (max-width: 59em)">
-                                <source  srcset="images/michael-tuszynski-F3MqchhfTnI-unsplash-large.jpg"  media="(min-width: 60em)">
-                                <img   src="images/michael-tuszynski-F3MqchhfTnI-unsplash-small2.jpg" alt="city photo" >
+                                <source srcset="images/michael-tuszynski-F3MqchhfTnI-unsplash-medium.jpg" media="(min-width: 39em) and (max-width: 59em)" alt="city photo">
+                                <source  srcset="images/michael-tuszynski-F3MqchhfTnI-unsplash-large.jpg"  media="(min-width: 60em)" alt="city photo">
+                                <img   src="images/michael-tuszynski-F3MqchhfTnI-unsplash-small.jpg" alt="city photo" >
                             </picture>
                         
                              <section class="overlay">
+
                                 <h2>Weather Summary</h2>
                     <ul id="summary">
                 <p>Currently: <span id="current"> </span></p>
@@ -88,10 +99,10 @@
         </section>
 
         <section>
-            <h2>Article</h2>
+            <h2>Weather in Preston</h2>
 			            <p>Weather forecasting is the application of science and technology to predict the conditions of the atmosphere for a given location and time. People have attempted to predict the weather informally for millennia and formally since the 19th century. Weather forecasts are made by collecting quantitative data about the current state of the atmosphere at a given place and using meteorology to project how the atmosphere will change.</p>
             <p>Source: https://en.wikipedia.org/wiki/Weather_forecasting</p>
-			<img class="townPic" src="images/angela-compagnone-XSUvsYl_LrE-unsplash-short.jpg" alt="umbrellaPic">
+			<img class="townPic" src="images/angela-compagnone-XSUvsYl_LrE-unsplash-umbrella-blue.jpg" alt="umbrellaPic">
         </section>
 
         <section>
@@ -101,11 +112,16 @@
 			<img class="townPic" src="images/2019-10-26 23_35_13-United States Postal Service - Google Maps.jpg" alt="mapPic">
 			    		
         </section>
+		
     </main>
 
     <footer id="footer">
+
+                <a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="http://www.pinterest.com"><img src="images/pinterest.png" alt="pinterest icon"></a>
+                <a href="http://www.whatsapp.com"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
         
-            &copy; 2019 | Siarhei Herman | Moscow, Russia | <a href=" https://www.byui.edu/online">BYUI Online Learning</a>
+            &copy; 2019 | Siarhei Herman | Moscow, Russia | Weather data source: openweathermap.org</a>
         <br>
         
 		<script>
