@@ -1,0 +1,46 @@
+{
+  "towns" : [
+  {
+    "name": "Rome Italy Temple",
+    "address": "Via di Settebagni 376, Rome RM, Italy",
+    "telephone": "(39) 06-9480-5050",
+    "services": "Clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby",
+    "history": " 4 October 2008 Announced, 23 October 2010 Groundbreaking , 10 March 2019 Dedicated" ,
+    "ordinanceSession": "4:30 PM Walk-ins and Appointments, 6:00 PM Walk-ins and Appointments, 7:30 PM Walk-ins and Appointments",
+    "templeClosure": " 2020: Monday, 23 March 2020 - Monday, 6 April 2020 ; Monday, 21 September 2020 - Monday, 5 October 2020 ; Thursday, 24 December 2020 - Saturday, 26 December 2020 ; Thursday, 31 December 2020 - Friday, 1 January 2021",
+  },
+  {
+    "name": "Paris France Temple",
+    "address": "46 Boulevard Saint Antoine, 78150 Le Chesnay, France",
+    "telephone": "(33) 970-73-70-00",
+    "services": "Clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby",
+    "history": " 1 October 2011 Announced, 24 August 2012 Groundbreaking , 21 May 2017 Dedicated" ,
+    "ordinanceSession": "12:30 PM Walk-ins and Appointments,3:00 PM Walk-ins and Appointments, 5:30 PM Walk-ins and Appointments, 8:30 PM Walk-ins and Appointments",
+    "templeClosure": " 2020: Monday, 13 January 2020 - Monday, 27 January 2020
+Saturday, 4 April 2020
+Monday, 8 June 2020 - Monday, 22 June 2020
+Saturday, 3 October 2020
+Thursday, 24 December 2020 - Saturday, 26 December 2020
+Thursday, 31 December 2020 - Saturday, 2 January 2021",
+  },
+  {
+    "name": "Rome Italy Temple",
+    "address": "Via di Settebagni 376, Rome RM, Italy",
+    "telephone": "(39) 06-9480-5050",
+    "services": "Clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby",
+    "history": " 4 October 2008 Announced, 23 October 2010 Groundbreaking , 10 March 2019 Dedicated" ,
+    "ordinanceSession": "4:30 PM Walk-ins and Appointments, 6:00 PM Walk-ins and Appointments, 7:30 PM Walk-ins and Appointments",
+    "templeClosure": " 2020: Monday, 23 March 2020 - Monday, 6 April 2020 ; Monday, 21 September 2020 - Monday, 5 October 2020 ; Thursday, 24 December 2020 - Saturday, 26 December 2020 ; Thursday, 31 December 2020 - Friday, 1 January 2021",
+  },
+  {
+    "name": "Rome Italy Temple",
+    "address": "Via di Settebagni 376, Rome RM, Italy",
+    "telephone": "(39) 06-9480-5050",
+    "services": "Clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby",
+    "history": " 4 October 2008 Announced, 23 October 2010 Groundbreaking , 10 March 2019 Dedicated" ,
+    "ordinanceSession": "4:30 PM Walk-ins and Appointments, 6:00 PM Walk-ins and Appointments, 7:30 PM Walk-ins and Appointments",
+    "templeClosure": " 2020: Monday, 23 March 2020 - Monday, 6 April 2020 ; Monday, 21 September 2020 - Monday, 5 October 2020 ; Thursday, 24 December 2020 - Saturday, 26 December 2020 ; Thursday, 31 December 2020 - Friday, 1 January 2021",
+  },
+  
+ ]
+}
