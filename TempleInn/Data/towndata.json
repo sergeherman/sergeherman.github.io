@@ -3,9 +3,9 @@
   {
     "name": "Rome Italy Temple",
     "photo": "franklin.jpg",
-    "motto": "Via di Settebagni 376, Rome RM, Italy",
-    "yearFounded": "4 October 2008",
-    "currentPopulation": "10 March 2019",
+    "motto": "Via di Settebagni 376, Rome RM, Italy , Telephone (39) 06-9480-5050",
+    "yearFounded": "4 October 2008 Announced , 23 October 2010 Groundbreaking, 10 March 2019 Dedicated",
+    "currentPopulation": "Clothing rental available. No cafeteria available. Patron housing available. Distribution center nearby.",
     "averageRainfall": "4:30 PM Walk-ins and Appointments, 6:00 PM Walk-ins and Appointments, 7:30 PM Walk-ins and Appointments",
     "events" : [
       "Monday, 23 March 2020 - Monday, 6 April 2020",
@@ -17,41 +17,47 @@
   {
     "name": "Paris France Temple",
     "photo": "fishhaven.jpg",
-    "motto": "This is Fish Heaven.",
-    "yearFounded": 1864,
-    "currentPopulation": 501,
-    "averageRainfall": 14.20,
+    "motto": "46 Boulevard Saint Antoine, 78150 Le Chesnay, France",
+    "yearFounded": "1 October 2011 Announced,  24 August 2012 Groundbreaking,  21 May 2017 Dedicated",
+    "currentPopulation": "Clothing rental available. No cafeteria available. Patron housing available. Distribution center nearby.",
+    "averageRainfall": "12:30 PM Walk-ins and Appointments, 3:00 PM Walk-ins and Appointments, 5:30 PM Walk-ins and Appointments, 8:30 PM Walk-ins and Appointments",
     "events" : [
-      "April 1: How Big Was That Fish Day",
-      "May 15-30: Rush the Creek Days",
-      "July 24: Bear Lake Blunder Run",
-      "December 12: Light the Tree"
+      "Monday, 13 January 2020 - Monday, 27 January 2020",
+      "Saturday, 4 April 2020",
+      "Monday, 8 June 2020 - Monday, 22 June 2020",
+      "Saturday, 3 October 2020",
+      "Thursday, 24 December 2020 - Saturday, 26 December 2020",
+      "Thursday, 31 December 2020 - Saturday, 2 January 2021"
     ]
   },
   {
     "name": "Copenhagen Denmark Temple",
     "photo": "greenville.jpg",
-    "motto": "Green is our way of life.",
-    "yearFounded": 1805,
-    "currentPopulation": 33458,
-    "averageRainfall": 25,
+    "motto": "Priorvej 12, 2000 Frederiksberg, Denmark, Telephone (45) 38-18-1818",
+    "yearFounded": "17 March 1999 Announced,  24 April 1999 Groundbreaking,  23 May 2004 Dedicated ",
+    "currentPopulation": "No clothing rental available. No cafeteria available. Patron housing available. Distribution center nearby.",
+    "averageRainfall": "4:30 PM Walk-ins and Appointments, 6:30 PM Walk-ins and Appointments",
     "events" : [
-      "February 10-12: Greenbration",
-      "May 8 - 18: Greenville Founder Days",
-      "June 20: Verde and Valiant Day",
-      "November 15-16: Greensome Gathering"
+      "Wednesday, 1 January 2020",
+      "Monday, 20 April 2020 - Monday, 4 May 2020",
+      "Monday, 21 September 2020 - Monday, 5 October 2020",
+      "Wednesday, 23 December 2020 - Monday, 28 December 2020",
+      "Thursday, 31 December 2020 - Friday, 1 January 2021"
     ]
   },
   {
     "name": "The Hague Netherlands Temple",
     "photo": "placerton.jpg",
-    "motto": "Positive Placement in Placerton.",
-    "yearFounded": 1946,
-    "currentPopulation": 512,
-    "averageRainfall": 39,
+    "motto": "Osijlaan 2, 2722 CV Zoetermeer, Netherlands, Telephone (31) 79-343-5310",
+    "yearFounded": "16 August 1999 Announced, 26 August 2000 Groundbreaking,  8 September 2002 Dedicated",
+    "currentPopulation": "No clothing rental available. No cafeteria available. No patron housing available. No distribution center nearby.",
+    "averageRainfall": "1:30 PM Walk-ins Only-Dutch, 3:30 PM Walk-ins Only, 5:30 PM Walk-ins Only-Dutch, 7:30 PM Walk-ins Only-Dutch",
     "events" : [
-      "July 4: A Blaze of Glory",
-      "October 20: Fall through Fall"
+      "Wednesday, 1 January 2020",
+      "Monday, 17 February 2020 - Monday, 2 March 2020",
+      "Saturday, 4 April 2020",
+      "Monday, 27 April 2020",
+      "Monday, 17 August 2020 - Monday, 26 October 2020"
     ]
   },
   {
