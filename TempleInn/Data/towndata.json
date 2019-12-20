@@ -1,7 +1,7 @@
 {
   "towns" : [
   {
-    "name": "Franklin",
+    "name": "Rome Italy Temple",
     "photo": "franklin.jpg",
     "motto": "Where you will grow!",
     "yearFounded": 1788,
@@ -14,7 +14,7 @@
     ]
   },
   {
-    "name": "Fish Haven",
+    "name": "Paris France Temple",
     "photo": "fishhaven.jpg",
     "motto": "This is Fish Heaven.",
     "yearFounded": 1864,
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "name": "Greenville",
+    "name": "Copenhagen Denmark Temple",
     "photo": "greenville.jpg",
     "motto": "Green is our way of life.",
     "yearFounded": 1805,
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "name": "Placerton",
+    "name": "The Hague Netherlands Temple",
     "photo": "placerton.jpg",
     "motto": "Positive Placement in Placerton.",
     "yearFounded": 1946,
@@ -53,44 +53,6 @@
       "October 20: Fall through Fall"
     ]
   },
-  {
-    "name": "Preston",
-    "photo": "preston.jpg",
-    "motto": "Home of Napoleon Dynamite.",
-    "yearFounded": 1866,
-    "currentPopulation": 5204,
-    "averageRainfall": 16.65,
-    "events" : [
-      "March 29: Work Creek Revival",
-      "July 8-12: Napoleon Dynamite Festival",
-      "November 2-4: Freedom Days"
-    ]
-  },
-  {
-    "name": "Soda Springs",
-    "photo": "sodasprings.jpg",
-    "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
-    "yearFounded": 1858,
-    "currentPopulation": 2985,
-    "averageRainfall": 15.75,
-    "events" : [
-      "February 29: Geyser Song Day",
-      "May 1-6: Days of May Celebration",
-      "October 15-16: Octoberfest"
-    ]
-  },
-  {
-    "name": "Springfield",
-    "photo": "springfield.jpg",
-    "motto": "Where everyone is lifted.",
-    "yearFounded": 1826,
-    "currentPopulation": 17852,
-    "averageRainfall": 17,
-    "events" : [
-      "January 8: Spring into Winter",
-      "April 10-20: Celebration of Life",
-      "July 31-Aug 15: Dog Days of Summer Festival"
-    ]
-  }
+  
  ]
 }
