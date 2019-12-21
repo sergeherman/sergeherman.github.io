@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites website</title>
+    <meta name="description" content="Temple Inn & Suites website home page">
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+<nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">☰ Menu</a></li>
+            <li><a href="index.html"class="active">Home</a></li>
+			<li><a href="temple.html">Temple</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+      
+    </nav>
+	
+    <header>
+        <picture>
+           <img src="images/bird.png" alt="Logo Bird Temple Inn">
+        </picture>
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+            <div class="m">Plan ahead. Make reservation.</div>
+
+    </header>
+
+    
+
+   <main>
+   
+   
+     
+    <div class="gallery">
+<picture class="hover">
+<p> Rome </p>
+<img class="lazy" alt="placeholder" src="images/rome_italy.jpg" data-src="images/rome_italy.jpg.jpg" />
+<p> Rome Italy Temple</p>
+</picture>
+<picture class="hover">
+<p> Paris </p>
+<img class="lazy" alt="placeholder" src="images/paris-france.jpg" data-src="images/paris-france.jpg" />
+<p> Paris France Temple </p>
+</picture>
+<picture class="hover">
+<p> Copenhagen </p>
+<img class="lazy" alt="placeholder" src="images/hague-netherlands.jpg" data-src="images/hague-netherlands.jpg" />
+<p> Copenhagen Denmark Temple</p>
+</picture>
+<picture class="hover">
+<p> Hague </p>
+<img class="lazy" alt="placeholder" src="images/copenhagen_denmark.jpg" data-src="images/copenhagen_denmark.jpg" />
+<p> The Hague Netherlands Temple</p>
+</picture>
+
+                            </div>
+							
+<div class="act">
+Please choose your destination.<br>
+ <a href="reservation.html">Book</a> your stay with us. 
+</div>
+
+   
+
+
+    </main>
+
+    <footer id="footer">
+                <a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="http://www.pinterest.com"><img src="images/pinterest.png" alt="pinterest icon"></a>
+                <a href="http://www.whatsapp.com"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
+        
+            <a>&copy; 2019 | Temple Inn & Suites | <a href="reference.html">Resource reference</a></a>
+
+    </footer>
+
+    <script src="js/toggleMenu.js"></script>
+	<script src="js/windchill.js"></script>
+	<script src="js/topbanner.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({  google: {  families: [ 'Anonymous Pro' ] }});
+    </script>
+	<script>
+        function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+    </script>
+	
+
+</body>
+
+</html>

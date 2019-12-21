@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites website</title>
+    <meta name="description" content="Temple Inn & Suites websitecontact page">
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+<nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">☰ Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+			<li><a href="temple.html">Temple</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+    </nav>
+	
+    <header>
+        <picture>
+           <img src="images/bird.png" alt="Logo Bird Temple Inn">
+        </picture>
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+            <div class="m">Plan ahead. Make reservation.</div>
+
+    </header>
+
+    <main>
+
+        
+        <section>
+            <h2>Contact information</h2>
+            <p>Address: 4800 Montgomery Ln #300, Bethesda, MD 20814 , United States, Phone: +1 800-275-8777</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013244!2d-77.09772048528421!3d38.98325177955751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sru!4v1576908280530!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			    
+<p>Please contact us for more details:</p>
+                <form method="GET" action="thanks.html" id="form">
+			          			
+                <div><input id="name" type="text" name="fullname" pattern="[A-Za-z ]{3,}" required=""><label for="name">  Your full name</label></div></br>
+                <div><input id="email" type="email" name="email" placeholder="e.g. aaaa@bbbb.com"><label for="email">  Email</label></div></br>
+                <div><input id="phone" type="tel" name="phoneNumber" required=""><label for="phone">  Phone</label></div></br>
+                
+                <div><legend>Questions and comments:</legend><div>
+                <label><textarea rows="4" cols="40"></textarea></label></br></br>
+            <input type="submit" value="Contact us">
+        </form>				
+        </section>
+		
+    </main>
+
+    <footer id="footer">
+
+                <a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="http://www.pinterest.com"><img src="images/pinterest.png" alt="pinterest icon"></a>
+                <a href="http://www.whatsapp.com"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
+        
+            <a>&copy; 2019 | Temple Inn & Suites | <a href="reference.html">Resource reference</a></a>
+
+    </footer>
+
+	<script src="js/allscripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({  google: {  families: [ 'Anonymous Pro' ] }});
+    </script>
+
+</body>
+
+</html>

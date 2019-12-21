@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites website</title>
+    <meta name="description" content="Temple Inn & Suites website reservation page">
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+<nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">☰ Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+			<li><a href="temple.html">Temple</a></li>
+            <li><a href="reservation.html"class="active">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+    </nav>
+	
+    <header>
+        <picture>
+           <img src="images/bird.png" alt="Logo Bird Temple Inn">
+        </picture>
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+            <div class="m">Plan ahead. Make reservation.</div>
+
+    </header>
+
+    <main>
+
+        <section class="reserve">
+        <h1>Please book your reservation here:</h1>
+
+               <form method="GET" action="thanks.html" id="form">
+			   
+		        <select>
+                    <option value="">Select Temple</option>
+                    <option value="Rome">Rome</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Copenhagen">Copenhagen</option>
+					<option value="Hague">Hague</option>
+                </select>   <label name="selectTemple">Select your Temple trip destination/location</label></br></br>	
+				<div><input type="date" name="checkInDate"><label>  Check-in date</label></div></br>
+				<div><input type="date" name="checkOutDate"><label>  Check-out date</label></div></br>
+			   
+			      <select>
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Triple">Triple</option>
+                    <option value="Quad">Quad</option>
+					<option value="King">King</option>
+					<option value="Studio">Studio</option>
+                </select>   <label name="selectTemple">Select the room type</label></br></br>	
+				
+                <div><input id="name" type="text" name="fullname" pattern="[A-Za-z ]{3,}" required=""><label for="name">  Registrant's full name</label></div></br>
+                <div><input id="email" type="email" name="email" placeholder="e.g. aaaa@bbbb.com"><label for="email">  Email</label></div></br>
+                <div><input id="phone" type="tel" name="phoneNumber" required=""><label for="phone">  Phone</label></div></br>
+                <div><input id="name" type="text" name="homeState" pattern="[A-Za-z ]{3,}" required=""><label for="name">  Registrant's home state or country</label></div></br>
+                <legend>Will you need help with children?</legend>
+                <label><input type="radio" name="dangerLevel" value="Yes">Yes</label>
+                <label><input type="radio" name="dangerLevel" value="Maybe">Maybe</label>
+                <label><input type="radio" name="dangerLevel" value="No">No</label></br></br>
+                <div><legend>Special accommodations/comments:</legend><div>
+                <label><textarea rows="4" cols="70"></textarea></label></br></br>
+            <input type="submit" value="Confirm booking">
+        </form>
+        </section>
+
+       
+    </main>
+
+    <footer id="footer">
+                <a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="http://www.pinterest.com"><img src="images/pinterest.png" alt="pinterest icon"></a>
+                <a href="http://www.whatsapp.com"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
+        
+            <a>&copy; 2019 | Temple Inn & Suites | <a href="reference.html">Resource reference</a></a>
+
+    </footer>
+
+    <script src="js/toggleMenu.js"></script>
+	<script src="js/windchill.js"></script>
+	<script src="js/topbanner.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({  google: {  families: [ 'Anonymous Pro' ] }});
+    </script>
+	<script>
+        function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+    </script>
+	
+	
+
+</body>
+
+</html>

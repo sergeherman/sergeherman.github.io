@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em) {
+    nav li a {
+        font-size: 1.3rem;
+    }
+	.gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+	    }
+	.hover:hover {
+  box-shadow: 5px 5px 5px 5px #d4af37;
+    }
+	    div.cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
