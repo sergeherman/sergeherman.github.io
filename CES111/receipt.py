@@ -11,7 +11,7 @@ def main():
         PRODUCT_INDEX = 0 # Index of the Product number column in the products.csv file.
         # PRODUCT_NAME = 2 # Index of the Products name column in the products_dict dictionary valu.
 
-        # read data from an internet site and write it in to the working file of the application for further manipulations
+        # read product data from an internet site and write it in to the working file of the application for further manipulations
         product_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\products.csv"
         response_product = requests.get('https://sergeherman.github.io/CES111/products_data_source.csv')
         with open(product_file_name, 'wb') as f:
@@ -23,9 +23,14 @@ def main():
         print(f"All Products")
         print(f'{products_dict}')
         
-        request_list_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\10\10_ProveMilestone\request.csv"
-        # request_list= read_compound_list(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\10\10_ProveMilestone\request.csv")
-        request_list= read_compound_list(request_list_file_name)
+
+        # read orders data from an internet site and write it in to the working file of the application for further manipulations
+        request_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\request.csv"
+        response_request = requests.get('https://sergeherman.github.io/CES111/order_data_source.csv')
+        with open(request_file_name, 'wb') as f:
+            f.write(response_request.content)
+        
+        request_list= read_compound_list(request_file_name)
         # request_list= read_compound_list(r"request.csv")
         # print(f'{request_list}')
 
