@@ -11,11 +11,12 @@ def main():
         PRODUCT_INDEX = 0 # Index of the Product number column in the products.csv file.
         # PRODUCT_NAME = 2 # Index of the Products name column in the products_dict dictionary valu.
 
+        # read data from an internet site and write it in to the working file of the application for further manipulations
+        product_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\products.csv"
         response_product = requests.get('https://sergeherman.github.io/CES111/products_data_source.csv')
-        with open('products.csv', 'wb') as f:
+        with open(product_file_name, 'wb') as f:
             f.write(response_product.content)
         
-        product_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\products.csv"
         # products_dict = read_dict(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\products.csv", PRODUCT_INDEX)
         products_dict = read_dict(product_file_name, PRODUCT_INDEX)
         # products_dict = read_dict(r"products.csv", PRODUCT_INDEX)

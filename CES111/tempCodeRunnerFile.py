@@ -1,2 +1,1 @@
-with open('products.csv', 'wb') as f:
-    f.write(response_product.content)
+product_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\products.csv"
