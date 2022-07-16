@@ -1,2 +1,2 @@
-response = requests.get('https://httpbin.org/basic-auth/corey/testing', auth=('corey', 'testing'))
-# print(response) 
+with open('products.csv', 'wb') as f:
+    f.write(response_product.content)

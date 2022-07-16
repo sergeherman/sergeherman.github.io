@@ -4,11 +4,12 @@ import requests
 # response = requests.get('https://sergeherman.github.io/CES111/test_data.md')
 # response = requests.get('https://sergeherman.github.io/CES111/products.csv')
 
+product_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\products.csv"
 response_product = requests.get('https://sergeherman.github.io/CES111/products_data_source.csv')
-with open('products.csv', 'wb') as f:
+with open(product_file_name, 'wb') as f:
     f.write(response_product.content)
 
-print(response_product.text) 
+# print(response_product.text) 
 # response = requests.get('https://httpbin.org/get', params=payload)
 # response = requests.get('https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Wooden_boomerang_asv2021-05.jpg/750px-Wooden_boomerang_asv2021-05.jpg')
 # response = requests.post('https://httpbin.org/post', data=payload)
