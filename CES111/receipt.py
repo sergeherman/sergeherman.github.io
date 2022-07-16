@@ -24,9 +24,9 @@ def main():
         print(f'{products_dict}')
         
 
-        # read orders data from an internet site and write it in to the working file of the application for further manipulations
+        # read requests data from an internet site and write it in to the working file of the application for further manipulations
         request_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\request.csv"
-        response_request = requests.get('https://sergeherman.github.io/CES111/products_data_source.csv')
+        response_request = requests.get('https://sergeherman.github.io/CES111/request_data_source.csv')
         with open(request_file_name, 'wb') as f:
             f.write(response_request.content)
         
