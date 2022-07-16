@@ -1,12 +1,19 @@
 import requests
 
-payload = {'username': 'corey', 'password': 'testing'}
+# payload = {'username': 'corey', 'password': 'testing'}
 # response = requests.get('https://sergeherman.github.io/CES111/test_data.md')
+# response = requests.get('https://sergeherman.github.io/CES111/products.csv')
+
+response_product = requests.get('https://sergeherman.github.io/CES111/products_data_source.csv')
+with open('products.csv', 'wb') as f:
+    f.write(response_product.content)
+
+print(response_product.text) 
 # response = requests.get('https://httpbin.org/get', params=payload)
 # response = requests.get('https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Wooden_boomerang_asv2021-05.jpg/750px-Wooden_boomerang_asv2021-05.jpg')
-response = requests.post('https://httpbin.org/post', data=payload)
-r_dict = response.json()
-print(r_dict['form'])
+# response = requests.post('https://httpbin.org/post', data=payload)
+# r_dict = response.json()
+# print(r_dict['form'])
 # # print(help(r))
 # print(response.text) 
 # print(response.json()) 
@@ -23,5 +30,5 @@ print(r_dict['form'])
 # query = {'search_query': 'audy'}
 # response = requests.get(url)
 
-response = requests.get('https://httpbin.org/basic-auth/corey/testing', auth=('corey', 'testing'))
-print(response) 
+# response = requests.get('https://httpbin.org/basic-auth/corey/testing', auth=('corey', 'testing'))
+# print(response) 

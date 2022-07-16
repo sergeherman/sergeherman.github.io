@@ -1,3 +1,4 @@
+import requests
 import csv
 # Import the datetime class from the datetime
 # module so that it can be used in this program.
@@ -9,15 +10,21 @@ def main():
     try:
         PRODUCT_INDEX = 0 # Index of the Product number column in the products.csv file.
         # PRODUCT_NAME = 2 # Index of the Products name column in the products_dict dictionary valu.
-    
 
-        products_dict = read_dict(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\10\10_ProveMilestone\products.csv", PRODUCT_INDEX)
+        response_product = requests.get('https://sergeherman.github.io/CES111/products_data_source.csv')
+        with open('products.csv', 'wb') as f:
+            f.write(response_product.content)
+        
+        product_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\products.csv"
+        # products_dict = read_dict(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\products.csv", PRODUCT_INDEX)
+        products_dict = read_dict(product_file_name, PRODUCT_INDEX)
         # products_dict = read_dict(r"products.csv", PRODUCT_INDEX)
         print(f"All Products")
         print(f'{products_dict}')
         
-
-        request_list= read_compound_list(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\10\10_ProveMilestone\request.csv")
+        request_list_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\10\10_ProveMilestone\request.csv"
+        # request_list= read_compound_list(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\10\10_ProveMilestone\request.csv")
+        request_list= read_compound_list(request_list_file_name)
         # request_list= read_compound_list(r"request.csv")
         # print(f'{request_list}')
 

@@ -1,2 +1,2 @@
-with open('test_picture.jpg', 'wb') as f:
-#     f.write(response.content)
+response = requests.get('https://httpbin.org/basic-auth/corey/testing', auth=('corey', 'testing'))
+# print(response) 
