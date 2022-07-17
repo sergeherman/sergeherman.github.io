@@ -12,9 +12,16 @@ def main():
 
         # read customer data from an internet site and write it in to the working file of the application for further manipulations
         customer_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\customers.csv"
-        response_customer = requests.get('https://sergeherman.github.io/CES111/customers_data_source.csv')
-        with open(customer_file_name, 'wb') as f:
-            f.write(response_customer.content)
+        
+        def add_customer():
+            """ Read customers data from an internet site and write it in 
+            to the working file of the application for further manipulations """
+            response_customer = requests.get('https://sergeherman.github.io/CES111/customers_data_source.csv')
+            with open(customer_file_name, 'wb') as f:
+                f.write(response_customer.content)
+        
+        # call the add_customer() function
+        add_customer()
         
         # customers_dict = read_dict(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\customers.csv", CUSTOMER_INDEX)
         customers_dict = read_dict(customer_file_name, CUSTOMER_INDEX)
@@ -37,7 +44,7 @@ def main():
             with open(request_file_name, 'wb') as f:
                 f.write(response_request.content)
             
-        # call the add_customer() function
+        # call the add_order() function
         add_order()    
        
         request_list= read_compound_list(request_file_name)
