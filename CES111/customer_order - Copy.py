@@ -1,5 +1,7 @@
 import requests
 import csv
+# Import the datetime class from the datetime
+# module so that it can be used in this program.
 from datetime import datetime
 
 
@@ -21,19 +23,13 @@ def main():
         print(f"All Customers")
         print(f'{customers_dict}')
         
+
+        # read requests data from an internet site and write it in to the working file of the application for further manipulations
         request_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\request.csv"
+        response_request = requests.get('https://sergeherman.github.io/CES111/request_data_source.csv')
+        with open(request_file_name, 'wb') as f:
+            f.write(response_request.content)
         
-        def add_order():
-            """ Read requests data from an internet site and write it in 
-            to the working file of the application for further manipulations """
-            
-            response_request = requests.get('https://sergeherman.github.io/CES111/request_data_source.csv')
-            with open(request_file_name, 'wb') as f:
-                f.write(response_request.content)
-            
-        # call the add_customer() function
-        add_order()    
-       
         request_list= read_compound_list(request_file_name)
         # request_list= read_compound_list(r"request.csv")
         # print(f'{request_list}')
