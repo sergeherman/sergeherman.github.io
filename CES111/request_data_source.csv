@@ -1,6 +1,6 @@
-Product #,Quantity
-W112,2
-D083,4
-W231,1
-C013,2
-D083,3
+Customer #, Order Quantity
+2,2
+3,4
+1,1
+5,2
+2,3
