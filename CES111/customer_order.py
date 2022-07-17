@@ -1,6 +1,7 @@
 import requests
 import csv
 from datetime import datetime
+import yaml # data serialization format designed for human readability 
 
 
 def main():
@@ -18,8 +19,13 @@ def main():
         # customers_dict = read_dict(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\customers.csv", CUSTOMER_INDEX)
         customers_dict = read_dict(customer_file_name, CUSTOMER_INDEX)
         # customers_dict = read_dict(r"customers.csv", CUSTOMER_INDEX)
-        print(f"All Customers")
-        print(f'{customers_dict}')
+        print()
+        print(f"CUSTOMERS ORDERS TRACKING TOOL")
+        print()
+        print(f"All Customers Info: Customer #, Customer Name, Package Size Defined for this Customer:")
+        print()
+        # print(f'{customers_dict}')
+        print(yaml.dump(customers_dict, default_flow_style=False))
         
         request_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\request.csv"
         
@@ -46,11 +52,14 @@ def main():
         CUSTOMER_NAME = 1
         CUSTOMER_PRICE = 2
 
-        print(f"Inkom Emporium")
+        print(f"Customers Orders Statistics")
         print()
+        print(f"Customer Name: Order Quantity & Package Size (items per package):")
+        
 
         subtotal = 0
         number_of_items = 0
+        
         # Contains a loop that reads and processes each row from the request.csv file.
         for customer in request_list:
 
@@ -68,16 +77,16 @@ def main():
             
             print(f"{customer_name}: {customer_quantity} @ {customer_price}")
         
+        number_of_orders = len(request_list)
+        ave_number_of_items_per_order = subtotal / number_of_orders
         
-        sales_tax = subtotal*0.06
-        total = subtotal + sales_tax
         print()
-        print(f"Number of Items: {number_of_items}")
-        print(f"Subtotal: {subtotal:.2f}")
-        print(f"Sales Tax: {sales_tax:.2f}")
-        print(f"Total: {total:.2f}")
+        print(f"Number of Orders: {number_of_orders}")
+        print(f"Number of Ordered Packages: {number_of_items}")
+        print(f"Total Number of Ordered Items: {subtotal}")
+        print(f"Average Number of Ordered Items per Order: {ave_number_of_items_per_order}")
         print()
-        print(f"Thank you for shopping at the Inkom Emporium.")
+        print(f"Thank you for using the Customer Order Tracking Tool.")
 
         # Call the now() method to get the current
         # date and time as a datetime object from
