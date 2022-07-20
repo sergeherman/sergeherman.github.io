@@ -11,7 +11,8 @@ def main():
         # CUSTOMER_NAME = 2 # Index of the Customers name column in the customers_dict dictionary valu.
 
         # read customer data from an internet site and write it in to the working file of the application for further manipulations
-        customer_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\customers.csv"
+        # customer_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\customers.csv"
+        customer_file_name = "customers.csv"
         
         def add_customer():
             """ Read customers data from an internet site and write it in 
@@ -23,7 +24,7 @@ def main():
         # call the add_customer() function
         add_customer()
         
-        # customers_dict = read_dict(r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\customers.csv", CUSTOMER_INDEX)
+     
         customers_dict = read_dict(customer_file_name, CUSTOMER_INDEX)
         # customers_dict = read_dict(r"customers.csv", CUSTOMER_INDEX)
         print()
@@ -34,7 +35,8 @@ def main():
         # print(f'{customers_dict}')
         print(yaml.dump(customers_dict, default_flow_style=False))
         
-        request_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\request.csv"
+        # request_file_name = r"C:\Users\hermansp\Documents\EDU\BYU_Pathway\BYUI\2022Spring\CES111\FinalProject\sergeherman.github.io\CES111\request.csv"
+        request_file_name = "request.csv"
         
         def add_order():
             """ Read requests data from an internet site and write it in 
